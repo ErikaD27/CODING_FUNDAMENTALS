@@ -1,0 +1,30 @@
+<!--Crea un script que permita al usuario ingresar 5 números, y nos devuelva la suma de estos números en consola.
+Ejemplo: El usuario ingresa 1,2,3,4,5
+El script devuelve 15-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Total=0
+        for(var i = 0; i<5;i++){
+            var numero = parseFloat(prompt("ingrese el valor"))
+            console.log(numero)
+            Total=numero+Total  
+        }
+        
+        console.log(`El valor de la suma de los 5 números es: ${Total}`)
+         
+            
+
+    
+</script>
+    
+</body>
+</html>
