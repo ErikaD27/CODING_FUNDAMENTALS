@@ -28,7 +28,7 @@ imprimirHtml.innerHTML = imprimeP;
 
 console.log("element: ", imprimirHtml);*/
 
-var n4 = 1;
+/*var n4 = 1;
 do{
   
     for (var index = 1; index < 11; index++){
@@ -36,4 +36,14 @@ do{
         console.log("resultado" + index+ "X"+ n4+ "="+result);
     }
     n4 = n4 + 1;
-}while( n4 < 11);
+}while( n4 < 11);*/
+
+try{
+    throw XPathExpression
+    console.log("exito ejecutando");
+    
+}catch(error)  {1
+    console.log(" Esto es un error",error);
+}finally{
+    console.log("siempre se ejecuta");
+}
