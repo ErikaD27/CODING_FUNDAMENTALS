@@ -1,30 +1,31 @@
-console.log("Este es un juego de roll en el que seleccionaras el animal de preferencia con el fin de atacar al oponente dado cada nivel. Si tu animal gana la batalla lo podrás conservar para que pueda ser convocado en otras batallas (si así lo requieres)");
+import { ContAle,ContAle7 ,FuerCont} from "./Contrincantes.js";
+import { Avatar, OpcAvat, FuerzaP } from "./Avatar.js";
 
-console.log("El contrincante número 1 es: El Hipopotamo.Los hipopotamos estan dispuestos a lo que sea por defender su territorio, quién crees que podría enfrentarse a uno de ellos y ganar?")
-var Personaje_l1 = 0;
-let equipo =[]
-do{ 
-  Personaje_l1 = parseInt(prompt("Ingrese el numero segun el personaje de preferencia\n 1. Leon \n 2.Serpiente cascabel\n 3.Elefante \n 4.Cocodrilo\n  5.Salir\n"))
-  switch(Personaje_l1){
-    case 1:
-      console.log("Elegiste Leon");
-      break;
-    case 2:
-      console.log("Elegiste Serpiente cascabel");
-      break;
-    case 3:
-      console.log("Elegiste Elefante y eso implica que tu personaje le haya ganado al Hipopotamo");
-      equipo.push("Elefante");
-      console.log("Ahora tu equipo esta conformado por: "+equipo)
-      break;
-    case 4:
-      console.log("Elegiste Cocodrilo");
-      console.log("Debido a la territorialidad del hipopótamo y que por lo general esta agrupado peste resulta ser una gran amenaza para el Cocodrilol y por ende estaría en desventaja");
-      break;
-    case 5:
-      console.log("Elegiste Salir.Hasta Luego");
-      break;
-    default:
-      break;
-  }
-}while(!(Personaje_l1>=1 && Personaje_l1<=5));
+console.log("Este es un juego de roll en el que seleccionaras el animal de preferencia con el fin de atacar al oponente el cual se presentará aleatoriamente. Si tu animal gana la batalla aumentarás puntos, luego si por el contrario pierdes con el animal escogido se te restará puntaje\n");
+
+let positionPlayer1 = -1
+let positionPlayer2 = -1
+// let Personajes = OpcAvat()
+
+// Personajes = Personajes.filter(function(f) { return f !== PersComb})
+
+console.log("Jugador 1 es tu turno")
+let PersComb = Avatar(OpcAvat())
+
+
+let Contrincante = ContAle7()
+console.log("Ahora jugador 1 tu contrincante es:\n", Contrincante)
+
+// var Personajes = Personajes.filter(function(f) { return f !== PersComb})
+console.log(" Es momento de que el Jugador 2 seleccione el personaje que va a combatir\n")
+console.log("Las opciones de personajes ahora son:\n",Avatar(PersComb))
+
+
+// console.log("Ahora jugador 2 tu contrincante es:\n", Contrincante) 
+
+
+
+// for(let j=0;j<=3;j++) {
+ 
+// }
+
