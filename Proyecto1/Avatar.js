@@ -11,7 +11,7 @@ function elec(OpcAvat2){
   return  Animalito
 }
 
-var Animal =elec()
+
 
 function seleccione(elec){
   var OpcAvat10 = OpcAvat()
@@ -22,24 +22,24 @@ function seleccione(elec){
 
 
 
-function Avatar(OpcAvat2,Animal){
+function Avatar(OpcAvat2,elec){
   var OpcAvat2 = OpcAvat()
  do{
-    var Elec = seleccione( Animal)
     
-    if((Animal>0)&&(Animal<=OpcAvat2.length)){
+    var Elec = seleccione(elec)
+    
+    if((elec>0)&&(elec<=OpcAvat2.length)){
       console.log("Tu eleccion fue:", Elec)
-      var ValorEliminar = OpcAvat2[Animal]
       OpcAvat2=OpcAvat2.filter(function(f) { return f !== Elec})
       console.log("La nueva lista es:", OpcAvat2)
       return OpcAvat2
       break;
     }    
-      else if (Animal==7){
+      else if (elec==7){
           console.log("Decidiste saLir: Hasta pronto")
           break;
       }
-  }while((!((Animal>0)&&(Animal<=OpcAvat1.length)))&&(!(Animal==undefined)));
+  }while((!((elec>0)&&(elec<=OpcAvat1.length)))&&(!(elec==undefined)));
 }
   
 
@@ -48,7 +48,7 @@ function Avatar(OpcAvat2,Animal){
 //   var Actuales=Avatar();
 //   console.log(Animalitos)
 // }
-function FuerzaP(Animal){
+function FuerzaP(){
   var FuerzaPe = {
     "Tigre":10,
      "Boa":8,
@@ -57,14 +57,14 @@ function FuerzaP(Animal){
      "Aguila":7, 
      "perro":3
     }
-  var ConP = seleccione(Animal)
+  var ConP = seleccione(elec)
   console.log("la fuerza de: ", ConP, "es: ",FuerzaPe[ConP] )
   return FuerzaPe[ConP]
 }
 
 
-console.log(Avatar(OpcAvat(),Animal))
-console.log(FuerzaP())
+// console.log(Avatar(OpcAvat(),elec))
+// console.log(FuerzaP())
 export{
   OpcAvat,
   Avatar,
@@ -73,4 +73,3 @@ export{
   elec
 
 }
-console.log(Avatar(OpcAvat()))
