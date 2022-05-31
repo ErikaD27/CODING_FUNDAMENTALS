@@ -25,7 +25,6 @@ function seleccione(elec){
 function Avatar(OpcAvat2,Animal){
   var OpcAvat2 = OpcAvat()
  do{
-    
     var Elec = seleccione( Animal)
     
     if((Animal>0)&&(Animal<=OpcAvat2.length)){
@@ -49,7 +48,7 @@ function Avatar(OpcAvat2,Animal){
 //   var Actuales=Avatar();
 //   console.log(Animalitos)
 // }
-function FuerzaP(){
+function FuerzaP(Animal){
   var FuerzaPe = {
     "Tigre":10,
      "Boa":8,
@@ -74,4 +73,4 @@ export{
   elec
 
 }
-// console.log(Avatar(OpcAvat()))
+console.log(Avatar(OpcAvat()))
