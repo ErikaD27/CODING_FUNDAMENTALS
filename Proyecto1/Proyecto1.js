@@ -85,6 +85,14 @@ while (contador>=0 && contador<=2 && Animalito!=7){
 console.log("El puntaje final del jugador 1", Puntaje_Jugador1)
 console.log("El puntaje final del jugador 2", Puntaje_Jugador2)
 
+if(Puntaje_Jugador1>Puntaje_Jugador2){
+  alert("El ganador es el Jugador 1")
+}else if(Puntaje_Jugador1<Puntaje_Jugador2){
+  alert("El ganador es el Jugador 2")
+}else{
+  alert("Estan empatados")
+}
+
 
 
 
