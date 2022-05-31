@@ -1,6 +1,6 @@
 
 
-import { ContAle,ContAle7 ,FuerCont} from "./Contrincantes.js";
+import { ContAle,FuerCont} from "./Contrincantes.js";
 import { OpcAvat} from "./Avatar.js";
 var FuerzaPe = {
   "Tigre":10,
