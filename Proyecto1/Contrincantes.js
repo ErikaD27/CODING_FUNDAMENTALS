@@ -23,8 +23,8 @@ function FuerCont(){
     console.log("la fuerza de: ", ConAle, "es: ",FuerCont[ConAle] )
     return FuerCont[ConAle]
 }
-console.log(ContAle7())
-console.log(FuerCont())
+// console.log(ContAle7())
+// console.log(FuerCont())
 export {
   ContAle, 
   ContAle7,
