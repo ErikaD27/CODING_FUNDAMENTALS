@@ -85,11 +85,11 @@ while (contador>=0 && contador<=2 && Animalito!=7){
 
 
 if(Puntaje_Jugador1>Puntaje_Jugador2){
-  alert("El ganador es el Jugador 1")
+  console.log('%c El ganador es el Jugador 1 ', 'background: #222; color: #D5E81A;font-size:50px')
 }else if(Puntaje_Jugador1<Puntaje_Jugador2){
-  alert("El ganador es el Jugador 2")
+  console.log('%c El ganador es el Jugador 2 ', 'background: #222; color: #1AE8C5;font-size: 50px')
 }else{
-  alert("Estan empatados")
+  console.log('%c Estan empatados ', 'background: #222; color: #E8651A;font-size: 50px')
 }
 // if (Puntaje_Jugador1<0){
 //   Puntaje_Jugador1 =0
