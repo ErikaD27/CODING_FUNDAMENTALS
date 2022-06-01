@@ -42,12 +42,15 @@ while (contador>=0 && contador<=2 && Animalito!=7){
         }else if(Elec=="Cocodrilo"){
           console.log('%c \nEl Cocodrilo:Es un buen nadador, puede moverse en tierra andando separando el cuerpo de tierra o arrastrando el cuerpo, mientras que las especies de menor tamaño incluso pueden galopar \n Su piel es gruesa y esta cubierta de escamas que no se superponen. Tienen dientes conicos, tipo estaca, y una poderosa mordida\n','background: #222; color: #1ED31B')
         }else if(Elec=="Aguila"){
-          console.log('%c \nEl Aguila: Como todas las aves de presa,  poseen un pico grande, poderoso y puntiagudo para desprender la carne de su presa. Cuentan también con tarsos y garras poderosas. Llama\n tambien la atencion la fuerza de las aguilas, que les posibilita alzar en vuelo a presas mucho más pesadas que ellas.\n','background: #222; color: #EEF33C')
+          console.log('%c \nEl Aguila: Como todas las aves de presa,  poseen un pico grande, poderoso y puntiagudo para desprender la carne de su presa. Cuentan también con tarsos y garras poderosas. Llama\n tambien la atencion la fuerza de las aguilas, que les posibilita alzar en vuelo a presas mucho mas pesadas que ellas.\n','background: #222; color: #EEF33C')
         }else if(Elec=="perro"){
-          console.log('%c \n El Perro(Doberman): Sus patas son largas y rectas, con una fuerza importante, y que además aportan agilidad y ligereza al animal. En su conjunto, el doberman es muy elegante tanto en sus movimientos\n como cuando esta en reposo. Ademas, su expresion es la de encontrarse siempre alerta y preparado para la accion.\n','background: #222; color: #3CF3F0')
+          console.log('%c \n El Perro(Doberman): Sus patas son largas y rectas, con una fuerza importante, y que ademas aportan agilidad y ligereza al animal. En su conjunto, el doberman es muy elegante tanto en sus movimientos\n como cuando esta en reposo. Ademas, su expresion es la de encontrarse siempre alerta y preparado para la accion.\n','background: #222; color: #3CF3F0')
         }
       OpcAvat2=OpcAvat2.filter(function(f) { return f !== Elec})
-      console.log("La nueva lista es:", OpcAvat2,"\n")
+      if (!(OpcAvat2.length===0)) {
+        console.log("La nueva lista es:", OpcAvat2,"\n")
+      }
+      
       console.log("\nla fuerza de: ", Elec, "es: ", FuerzaPe[Elec],"\n")
       var Contrincante = ContAle(7,0)
       console.log("Tu contrincante jugador 1 ahora es: "+Contrincante)
@@ -89,7 +92,9 @@ while (contador>=0 && contador<=2 && Animalito!=7){
         console.log('%c \n El Perro(Doberman): Sus patas son largas y rectas, con una fuerza importante, y que además aportan agilidad y ligereza al animal. En su conjunto, el doberman es muy elegante tanto en sus movimientos\n como cuando esta en reposo. Ademas, su expresion es la de encontrarse siempre alerta y preparado para la accion.\n','background: #222; color: #3CF3F0')
       }
       OpcAvat2=OpcAvat2.filter(function(f) { return f !== Elec})
-      console.log("La nueva lista es:", OpcAvat2,"\n")
+      if (!(OpcAvat2.length===0)) {
+        console.log("La nueva lista es:", OpcAvat2,"\n")
+      }
       console.log("\nla fuerza de: ", Elec, "es: ", FuerzaPe[Elec],"\n")
       var Contrincante = ContAle(7,0)
       console.log("\nTu contrincante jugador 2 ahora es: "+Contrincante)
