@@ -29,13 +29,13 @@ while (contador>=0 && contador<=2 && Animalito!=7){
     for (let i = 0; i < OpcAvat2.length; i++) {
       console.log (i+1+". "+OpcAvat2[i])
     }
-    Animalito = parseInt( prompt("Por favor selecione una de las anteriores opciones, presiona 7 si deseas salir"))
+    Animalito = parseInt( prompt("\nPor favor selecione una de las anteriores opciones, presiona 7 si deseas salir\n"))
     var Elec = (OpcAvat2[Animalito-1])
     if((Animalito>0)&&(Animalito<=OpcAvat2.length)){
-      console.log("Tu eleccion fue:",Elec)
+      console.log("\nTu eleccion fue:",Elec)
       OpcAvat2=OpcAvat2.filter(function(f) { return f !== Elec})
       console.log("La nueva lista es:", OpcAvat2)
-      console.log("la fuerza de: ", Elec, "es: ", FuerzaPe[Elec])
+      console.log("\nla fuerza de: ", Elec, "es: ", FuerzaPe[Elec])
       var Contrincante = ContAle(7,0)
       console.log("Tu contrincante jugador 1 ahora es: "+Contrincante)
       if(Contrincantes<FuerzaPe[Elec]){
@@ -47,25 +47,25 @@ while (contador>=0 && contador<=2 && Animalito!=7){
       }
       break;
     }else if (Animalito==7){
-    console.log("Decidiste saLir: Hasta pronto")
+    console.log("\n\nDecidiste saLir: Hasta pronto\n")
     break;
     }
   }while((!((Animalito>0)&&(Animalito<=OpcAvat2.length)))&&(!(Animalito==undefined)));
   // console.log(Puntaje_Jugador1)
-  console.log("Jugador 2 es tu turno")
+  console.log("\n\nJugador 2 es tu turno")
   do{
     for (let i = 0; i < OpcAvat2.length; i++) {
       console.log (i+1+". "+OpcAvat2[i])
     }
-    Animalito = parseInt( prompt("Por favor selecione una de las anteriores opciones, presiona 7 si deseas salir"))
+    Animalito = parseInt( prompt("\nPor favor selecione una de las anteriores opciones, presiona 7 si deseas salir\n"))
     var Elec = (OpcAvat2[Animalito-1])
     if((Animalito>0)&&(Animalito<=OpcAvat2.length)){
-      console.log("Tu eleccion fue:",Elec)
+      console.log("\nTu eleccion fue:",Elec)
       OpcAvat2=OpcAvat2.filter(function(f) { return f !== Elec})
       console.log("La nueva lista es:", OpcAvat2)
-      console.log("la fuerza de: ", Elec, "es: ", FuerzaPe[Elec])
+      console.log("\nla fuerza de: ", Elec, "es: ", FuerzaPe[Elec])
       var Contrincante = ContAle(7,0)
-      console.log("Tu contrincante jugador 2 ahora es: "+Contrincante)
+      console.log("\nTu contrincante jugador 2 ahora es: "+Contrincante)
       if(Contrincantes<FuerzaPe[Elec]){
         Puntaje_Jugador2 +=1
       }else if(Contrincantes<FuerzaPe[Elec]){
