@@ -81,9 +81,8 @@ while (contador>=0 && contador<=2 && Animalito!=7){
   }while((!((Animalito>0)&&(Animalito<=OpcAvat2.length)))&&(!(Animalito==undefined)))
   contador+=1;
   // console.log(Puntaje_Jugador2)
-}console.log("\nEl juego no puede continuar porque uno de los participantes decidio salir")
-console.log("El puntaje final del jugador 1", Puntaje_Jugador1)
-console.log("El puntaje final del jugador 2", Puntaje_Jugador2)
+}
+
 
 if(Puntaje_Jugador1>Puntaje_Jugador2){
   alert("El ganador es el Jugador 1")
@@ -92,7 +91,12 @@ if(Puntaje_Jugador1>Puntaje_Jugador2){
 }else{
   alert("Estan empatados")
 }
-
-
+// if (Puntaje_Jugador1<0){
+//   Puntaje_Jugador1 =0
+// }
+// if (Puntaje_Jugador2<0){
+//   Puntaje_Jugador2 = 0}
+// console.log("El puntaje final del jugador 1", Puntaje_Jugador1)
+// console.log("El puntaje final del jugador 2", Puntaje_Jugador2)
 
 
